@@ -3,7 +3,6 @@ import "../assets/css/Block.css";
 
 function ExpBlock({
   heading,
-  size,
   content,
 }: {
   heading: string;

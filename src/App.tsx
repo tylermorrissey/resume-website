@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import ExpBlock from "./components/ExpBlock";
-import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { Box } from "@mui/material";
 import { beamExperience, ccsExperience, rootExperience } from "./content";
 import SkillBlock from "./components/SkillsBlock";
 import ContactBlock from "./components/ContactBlock";
