@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/css/Block.css";
-import Grid from "@mui/material/Unstable_Grid2";
 
 function ExpBlock({
   heading,
