@@ -1,0 +1,63 @@
+.skillBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-row {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  padding: 10px 10px 5px 10px;
+  margin: 10px;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, #414040, #262626);
+  box-shadow: 0 0 2px 1px #343434;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.skill:hover .hidden-text-wrap {
+  /*background-image: linear-gradient(to bottom right, #414141, #2f2f2f);*/
+  box-shadow: 0 0 3px 3px #343434;
+  visibility: visible;
+  opacity: 1;
+}
+
+.skill:hover .hidden-text {
+  transform: translateY(0);
+}
+
+.skill-image {
+  filter: drop-shadow(0 0 0.5rem #262626);
+}
+
+.hidden-text-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #343434;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
+}
+
+.hidden-text {
+  transition: 0.2s;
+  transform: translateY(1em);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

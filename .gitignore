@@ -21,6 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/jsLinters/eslint.xml
+/.idea/prettier.xml
 # Logs
 logs
 *.log
