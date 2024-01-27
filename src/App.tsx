@@ -20,7 +20,7 @@ function App() {
             <PictureBlock />
             <ContactBlock />
           </div>
-          <div className={"column"}>
+          <div className={"skills-column"}>
             <SkillBlock />
           </div>
         </div>

@@ -11,6 +11,12 @@
   justify-content: center;
 }
 
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
 .skill {
   padding: 10px 10px 5px 10px;
   margin: 10px;

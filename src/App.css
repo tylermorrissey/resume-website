@@ -20,12 +20,14 @@
   margin: 5px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .body {
   margin: 5px;
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
 }
 
 .row {
@@ -47,6 +49,8 @@
   border-image-slice: 1;
   border-bottom: 1px solid;
   border-image-source: linear-gradient(to left, #343434, #efe9e9);
+  width: 100vh;
+  max-width: 1200px;
 }
 
 .navbar > a {
