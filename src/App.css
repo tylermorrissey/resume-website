@@ -64,19 +64,39 @@
   max-width: 1200px;
 }
 
-.pictureBlock {
+.picture-block {
   flex: 5%;
   display: flex;
 }
 
-.blockContent {
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
+.block-content {
+  text-align: left;
+  margin: 0 0 0 50px;
   /*box-shadow: 0 0 5px 2px rgba(28, 15, 31, 0.91);*/
 }
 
-.contactContent {
+.experience-block {
+  display: flex;
+  flex-direction: column;
+  margin: 75px 0 75px;
+  justify-content: left;
+}
+
+.experience-row {
+  margin: 50px 0 50px;
+}
+
+.about-me {
+  margin: 75px 0 75px;
+}
+
+.company-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.contact-content {
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -157,6 +177,17 @@ h3 {
 }
 
 .github {
+  background-color: #343434;
+  box-shadow: 0 0 1px 1px #343434;
+  padding: 1px 3px 1px 3px !important;
+  height: max-content;
+  border-radius: 10px;
+  line-height: 0;
+  margin: 5px;
+  width: 25px;
+}
+
+.linkedin {
   background-color: #343434;
   box-shadow: 0 0 1px 1px #343434;
   padding: 1px 3px 1px 3px !important;

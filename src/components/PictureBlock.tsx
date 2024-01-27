@@ -4,7 +4,7 @@ import picture from "../assets/images/IMG_6346 2.png";
 
 function PictureBlock() {
   return (
-    <div className="pictureBlock">
+    <div className="picture-block">
       <img
         className={"profile-picture"}
         src={picture}

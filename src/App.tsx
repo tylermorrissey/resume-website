@@ -7,6 +7,9 @@ import SkillBlock from "./components/SkillsBlock";
 import ContactBlock from "./components/ContactBlock";
 import PictureBlock from "./components/PictureBlock";
 import NavigationBlock from "./components/NavigationBlock";
+import beamLogo from "./assets/images/beamLogo.png";
+import rootLogo from "./assets/images/rootLogo.png";
+import ccsLogo from "./assets/images/ccsLogo.png";
 
 function App() {
   return (
@@ -15,30 +18,32 @@ function App() {
         <NavigationBlock />
       </div>
       <div className={"body"}>
-        <div className={"body-row"}>
-          <div className={"column"}>
-            <PictureBlock />
-            <ContactBlock />
-          </div>
-          <div className={"skills-column"}>
-            <SkillBlock />
+        <div className={"about-me"}>
+          <div className={"body-row"}>
+            <div className={"column"}>
+              <PictureBlock />
+              <ContactBlock />
+            </div>
+            <div className={"skills-column"}>
+              <SkillBlock />
+            </div>
           </div>
         </div>
-        <div className={"column"}>
+        <div className={"experience-block"}>
           <ExpBlock
             heading={"Beam Benefits"}
             content={beamExperience}
-            size={6}
+            image={beamLogo}
           />
           <ExpBlock
             heading={"Root Insurance"}
             content={rootExperience}
-            size={6}
+            image={rootLogo}
           />
           <ExpBlock
             heading={"Columbus City Schools"}
             content={ccsExperience}
-            size={12}
+            image={ccsLogo}
           />
         </div>
       </div>
