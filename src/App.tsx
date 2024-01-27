@@ -15,7 +15,7 @@ function App() {
         <NavigationBlock />
       </div>
       <div className={"body"}>
-        <div className={"header-row"}>
+        <div className={"body-row"}>
           <div className={"column"}>
             <PictureBlock />
             <ContactBlock />
