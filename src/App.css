@@ -203,6 +203,15 @@ h3 {
   filter: invert(75%);
 }
 
+.linkedin-logo {
+  -webkit-filter: invert(1);
+  filter: invert(90%);
+}
+
+.gmail-logo:hover {
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -220,6 +229,10 @@ h3 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiTooltip-tooltip {
+  padding: 10px 5px 10px !important;
 }
 
 /* setup tooltips */
