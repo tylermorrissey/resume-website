@@ -6,7 +6,6 @@
     rgb(16, 16, 16)
   );
   min-height: 100vh;
-  padding: 30px 100px 0;
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0;
@@ -24,7 +23,6 @@
 }
 
 .body {
-  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +41,7 @@
 /*----------------------------------------------navbar------------------------------------------------*/
 
 .navbar {
-  margin-bottom: 100px;
+  margin: 30px 100px 100px;
   flex: 100%;
   display: flex;
   border-image-slice: 1;
@@ -61,7 +59,21 @@
 .body-row {
   flex-direction: row;
   display: flex;
-  max-width: 1200px;
+}
+
+.beam-exp-image {
+  background-color: #079de8;
+  padding: 150px 150px;
+}
+
+.ccs-exp-image {
+  background-color: #fefefe;
+  padding: 150px 150px;
+}
+
+.root-exp-image {
+  background-color: #ff5715;
+  padding: 150px 150px;
 }
 
 .picture-block {
@@ -83,11 +95,10 @@
 }
 
 .experience-row {
-  margin: 50px 0 50px;
 }
 
 .about-me {
-  margin: 75px 0 75px;
+  margin: 75px 100px 75px;
 }
 
 .company-logo {

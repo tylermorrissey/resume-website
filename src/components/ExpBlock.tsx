@@ -5,10 +5,12 @@ function ExpBlock({
   heading,
   content,
   image,
+  imgClassName,
 }: {
   heading: string;
   content: string[];
   image: string;
+  imgClassName: string;
 }) {
   function contentLines() {
     return content.map((contentLine: string) => <li>{contentLine}</li>);
@@ -16,7 +18,7 @@ function ExpBlock({
 
   return (
     <div className="body-row experience-row">
-      <div className={"blockImage"}>
+      <div className={imgClassName}>
         <img className={"company-logo"} src={image} alt={"company logo"} />
       </div>
       <div className="block-content">

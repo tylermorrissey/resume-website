@@ -34,16 +34,19 @@ function App() {
             heading={"Beam Benefits"}
             content={beamExperience}
             image={beamLogo}
+            imgClassName={"beam-exp-image"}
           />
           <ExpBlock
             heading={"Root Insurance"}
             content={rootExperience}
             image={rootLogo}
+            imgClassName={"root-exp-image"}
           />
           <ExpBlock
             heading={"Columbus City Schools"}
             content={ccsExperience}
             image={ccsLogo}
+            imgClassName={"ccs-exp-image"}
           />
         </div>
       </div>
