@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/ContactBlock.css";
+import "../assets/css/IntroBlock.css";
 
 function IntroBlock() {
   return (
