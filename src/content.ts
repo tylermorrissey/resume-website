@@ -1,8 +1,12 @@
 export const beamExperience: string[] = [
   `Increased performance, reliability, and functionality across the quoting platform`,
   `Integrated with 3rd party APIs from The Hartford insurance company to develop/enable the disability quoting platform at Beam`,
-  `Developed a complete redesign of the UI, workflow, and APIs for the broker quoting tool`,
-  `Developed a promotion/discount interface for admin/broker use in the quoting tool`,
+  `Enhanced the Broker Quoting Tool experience and functionality`,
+  `-Developed a complete redesign of the UI, workflow, and APIs for the broker quoting tool`,
+  `-Developed a promotion/discount interface for admin/broker use in the quoting tool`,
+  `-Developed a promotion/discount interface for admin/broker use in the quoting tool`,
+  `Worked alongside product and design teams throughout product development lifecycles`,
+  `Highly collaborative workflow with team, regularly reviewing pull requests with thorough feedback to ensure code quality`,
 ];
 
 export const rootExperience: string[] = [

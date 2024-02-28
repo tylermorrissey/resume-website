@@ -10,16 +10,22 @@ import NavigationBlock from "./components/NavigationBlock";
 import beamLogo from "./assets/images/beamLogo.png";
 import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
+import IntroBlock from "./components/IntroBlock";
 
 function App() {
   return (
     <Box className={"App"}>
-      <div className={"header"}>
-        <NavigationBlock />
-      </div>
       <div className={"body"}>
-        <div className={"about-me"}>
-          <div className={"body-row"}>
+        <div className={"landing section"}>
+          <div className={"landing-content"}>
+            <div className={"header"}>
+              <NavigationBlock />
+            </div>
+            <IntroBlock />
+          </div>
+        </div>
+        <div className={"body-row"}>
+          <div className={"about-me section"}>
             <div className={"column"}>
               <PictureBlock />
               <ContactBlock />
