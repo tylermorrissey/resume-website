@@ -1,7 +1,7 @@
 .intro-text-container {
   display: flex;
   flex-direction: column;
-  margin: 0 15vh 0 70vh;
+  margin: 15vh 15vh 0 70vh;
   padding: 1vh 3vh 5vh;
   background-color: rgba(10, 10, 10, 0.65);
   border-radius: 30px;

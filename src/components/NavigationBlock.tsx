@@ -4,9 +4,9 @@ import "../assets/css/NavigationBlock.css";
 function NavigationBlock() {
   return (
     <div className="navbar">
-      <a>Experience</a>
-      <a>Skills</a>
-      <a>Projects</a>
+      <a>experience</a>
+      <a>skills</a>
+      <a>projects</a>
     </div>
   );
 }
