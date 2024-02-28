@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/css/Block.css";
 
 function ExpBlock({
   heading,
@@ -17,7 +16,7 @@ function ExpBlock({
   }
 
   return (
-    <div className="body-row experience-row section">
+    <div className="body-row section">
       <div className={imgClassName}>
         <img className={"company-logo"} src={image} alt={"company logo"} />
       </div>

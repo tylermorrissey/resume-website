@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/css/Block.css";
 import buildKite from "../assets/images/skills/buildkite-icon.svg";
 import dataDog from "../assets/images/skills/datadog-icon.svg";
 import docker from "../assets/images/skills/docker-icon.svg";
