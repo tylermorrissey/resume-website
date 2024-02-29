@@ -1,7 +1,7 @@
 .skillBlock {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: 10vh 20vh;
 }
 
 .skills-row {
@@ -9,17 +9,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  margin-top: 2vh;
 }
 
 .skills-column {
   display: flex;
   flex-direction: column;
-  justify-content: right;
 }
 
 .skill {
   padding: 10px 10px 5px 10px;
-  margin: 10px;
+  margin: 2vh;
   border-radius: 3px;
   background-image: linear-gradient(to bottom right, #414040, #262626);
   box-shadow: 0 0 2px 1px #343434;

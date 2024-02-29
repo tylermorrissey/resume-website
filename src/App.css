@@ -31,7 +31,6 @@
 .body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -55,7 +54,8 @@
   flex: 100%;
   display: flex;
   width: 100vh;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: right;
   margin-right: 8vh;
 }
 
@@ -78,9 +78,23 @@
   display: flex;
 }
 
+.skills-section {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
 .section {
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.big-circle {
+  /*background-color: #6e6e6e;*/
+  /*height: 2000px;*/
+  /*width: 100%;*/
+  /*border-radius: 0 1000px 1000px 0;*/
+  /*position: absolute;*/
 }
 
 .beam-exp-image {
@@ -104,10 +118,9 @@
   /*box-shadow: 0 0 5px 2px rgba(28, 15, 31, 0.91);*/
 }
 
-.experience-block {
+.body-block {
   display: flex;
   flex-direction: column;
-  margin: 75px 0 75px;
   justify-content: left;
 }
 
@@ -132,7 +145,6 @@
 .about-me {
   display: flex;
   flex-direction: row;
-  padding: 75px 150px 75px;
 }
 
 .company-logo {

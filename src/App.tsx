@@ -11,6 +11,7 @@ import beamLogo from "./assets/images/beamLogo.png";
 import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
+import SkillsBlock from "./components/SkillsBlock";
 
 function App() {
   return (
@@ -24,18 +25,10 @@ function App() {
             <IntroBlock />
           </div>
         </div>
-        <div className={"body-row"}>
-          <div className={"about-me section"}>
-            <div className={"column"}>
-              <PictureBlock />
-              <ContactBlock />
-            </div>
-            <div className={"skills-column"}>
-              <SkillBlock />
-            </div>
-          </div>
+        <div className={"body-block"}>
+          <SkillsBlock />
         </div>
-        <div className={"experience-block"}>
+        <div className={"body-block"}>
           <ExpBlock
             heading={"Beam Benefits"}
             content={beamExperience}

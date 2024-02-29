@@ -11,27 +11,33 @@ import ruby from "../assets/images/skills/ruby.svg";
 import typescript from "../assets/images/skills/typescript-icon.svg";
 import spring from "../assets/images/skills/spring-icon.svg";
 import react from "../assets/images/skills/react.svg";
+import groovy from "../assets/images/skills/groovy.svg";
 import "../assets/css/skillsBlock.css";
 
 function SkillBlock() {
   type logoPair = { name: string; logo: string };
-  const logos: logoPair[] = [
+  const languageLogos: logoPair[] = [
+    { name: "Ruby", logo: ruby },
+    { name: "Java", logo: java },
+    { name: "TypeScript", logo: typescript },
+    { name: "Groovy", logo: groovy },
+  ];
+  const frameworkLogos: logoPair[] = [
     { name: "React", logo: react },
     { name: "Rails", logo: rails },
-    { name: "Java", logo: java },
     { name: "Node.js", logo: nodejs },
-    { name: "TypeScript", logo: typescript },
-    { name: "Ruby", logo: ruby },
     { name: "Jest", logo: jest },
     { name: "Spring", logo: spring },
+  ];
+  const toolLogos: logoPair[] = [
     { name: "DataDog", logo: dataDog },
     { name: "Docker", logo: docker },
     { name: "BuildKite", logo: buildKite },
     { name: "PostgreSQL", logo: postgresql },
   ];
 
-  function skills() {
-    return logos.map(({ name, logo }) => (
+  function skills(logoPair: logoPair[]) {
+    return logoPair.map(({ name, logo }) => (
       <div className="skill">
         <img
           className="skill-image"
@@ -48,12 +54,22 @@ function SkillBlock() {
   }
 
   return (
-    <div className={"skillBlock"}>
-      <div className={"skills-row"}>
-        <h3>Tech Stack</h3>
+    <body className={"skills-section section"}>
+      <div className={"skillBlock"}>
+        <div className={"skills-row"}>
+          <h3>Languages</h3>
+          <div className={"skills-row"}>{skills(languageLogos)}</div>
+        </div>
+        <div className={"skills-row"}>
+          <h3>Frameworks</h3>
+          <div className={"skills-row"}>{skills(frameworkLogos)}</div>
+        </div>
+        <div className={"skills-row"}>
+          <h3>Tools</h3>
+          <div className={"skills-row"}>{skills(toolLogos)}</div>
+        </div>
       </div>
-      <div className={"skills-row"}>{skills()}</div>
-    </div>
+    </body>
   );
 }
 
