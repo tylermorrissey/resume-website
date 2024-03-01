@@ -12,6 +12,8 @@ import typescript from "../assets/images/skills/typescript-icon.svg";
 import spring from "../assets/images/skills/spring-icon.svg";
 import react from "../assets/images/skills/react.svg";
 import groovy from "../assets/images/skills/groovy.svg";
+import javascript from "../assets/images/skills/javascript.svg";
+import gitIcon from "../assets/images/skills/git-icon.svg";
 import "../assets/css/skillsBlock.css";
 
 function SkillBlock() {
@@ -21,6 +23,7 @@ function SkillBlock() {
     { name: "Java", logo: java },
     { name: "TypeScript", logo: typescript },
     { name: "Groovy", logo: groovy },
+    { name: "Javascript", logo: javascript },
   ];
   const frameworkLogos: logoPair[] = [
     { name: "React", logo: react },
@@ -34,6 +37,7 @@ function SkillBlock() {
     { name: "Docker", logo: docker },
     { name: "BuildKite", logo: buildKite },
     { name: "PostgreSQL", logo: postgresql },
+    { name: "Git", logo: gitIcon },
   ];
 
   function skills(logoPair: logoPair[]) {
@@ -55,18 +59,31 @@ function SkillBlock() {
 
   return (
     <body className={"skills-section section"}>
-      <div className={"skillBlock"}>
+      <div className={"skills-column"}>
         <div className={"skills-row"}>
-          <h3>Languages</h3>
-          <div className={"skills-row"}>{skills(languageLogos)}</div>
+          <div className={"skill-text-large"}>What do I like to work with?</div>
         </div>
-        <div className={"skills-row"}>
-          <h3>Frameworks</h3>
-          <div className={"skills-row"}>{skills(frameworkLogos)}</div>
-        </div>
-        <div className={"skills-row"}>
-          <h3>Tools</h3>
-          <div className={"skills-row"}>{skills(toolLogos)}</div>
+        <div className={"skills-block"}>
+          <div className={"skills-row"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Languages</div>
+            </div>
+            <div className={"skills-box-row"}>{skills(languageLogos)}</div>
+          </div>
+          {/*<hr className={"styled-hr"} />*/}
+          <div className={"skills-row"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Frameworks</div>
+            </div>
+            <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
+          </div>
+          {/*<hr className={"styled-hr"} />*/}
+          <div className={"skills-row"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Tools</div>
+            </div>
+            <div className={"skills-box-row"}>{skills(toolLogos)}</div>
+          </div>
         </div>
       </div>
     </body>

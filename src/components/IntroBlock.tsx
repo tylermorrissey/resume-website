@@ -4,7 +4,7 @@ import "../assets/css/IntroBlock.css";
 function IntroBlock() {
   return (
     <div className={"intro-text-container"}>
-      <div className={"intro-bg"}></div>
+      {/*<div className={"intro-bg"}></div>*/}
       <div className={"intro-text-row"}>
         <div className={"intro-text intro-text-large"}>Hey, I'm Tyler -</div>
       </div>

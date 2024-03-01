@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import ExpBlock from "./components/ExpBlock";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { beamExperience, ccsExperience, rootExperience } from "./content";
 import SkillBlock from "./components/SkillsBlock";
 import ContactBlock from "./components/ContactBlock";
@@ -17,15 +17,19 @@ function App() {
   return (
     <Box className={"App"}>
       <div className={"body"}>
-        <div className={"landing section"}>
+        <div className={"landing section picture-block"}>
           <div className={"landing-content"}>
             <div className={"header"}>
               <NavigationBlock />
             </div>
             <IntroBlock />
+            <div className={"intro-footer"}>
+              <button className={"styled-button"}>About Me</button>
+            </div>
           </div>
         </div>
         <div className={"body-block"}>
+          {/*<AboutMe />*/}
           <SkillsBlock />
         </div>
         <div className={"body-block"}>

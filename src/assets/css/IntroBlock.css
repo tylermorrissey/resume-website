@@ -1,35 +1,48 @@
 .intro-text-container {
   display: flex;
   flex-direction: column;
-  margin: 15vh 15vh 0 70vh;
-  padding: 1vh 3vh 5vh;
-  background-color: rgba(5, 5, 5, 0.65);
-  border-radius: 30px;
-  box-shadow: 0 0 2px 1px rgba(5, 5, 5, 0.6);
+  justify-content: center;
+  margin: 0 20vh 0;
+  /*padding: 1vh 3vh 5vh;*/
+  height: 30vh;
+  /*background-color: #252525;*/
+  /*border-color: #1c1c1c;*/
+  /*border-width: 1px;*/
+  /*border-style: solid;*/
+  /*border-radius: 30px;*/
+  /*box-shadow: 0 0 20px 20px #1c1c1c;*/
+}
+
+.intro-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 60vh;
 }
 
 .intro-text-large {
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: -1px;
-  word-spacing: 0;
-  color: #ffffff;
-  text-shadow: #606060 2px 1px 0px;
-  opacity: 0.8;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  color: rgba(254, 254, 254, 0.92);
+  /*text-shadow: #606060 2px 1px 0px;*/
+  /*opacity: 0.8;*/
 }
 
 .intro-text-small {
-  font-size: 30px;
-  font-weight: lighter;
-  letter-spacing: 0;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
   word-spacing: 2px;
-  color: #ffffff;
-  opacity: 0.8;
-  text-shadow: #6e6e6e 1px 0px 1px;
+  color: #fefefe;
+  text-align: center;
+  /*opacity: 0.8;*/
+  /*text-shadow: #6e6e6e 1px 0px 1px;*/
 }
 
 .intro-text {
-  font-family: "Arial", Gadget, sans-serif;
+  font-family: "League Spartan", sans-serif;
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
@@ -39,5 +52,41 @@
 .intro-text-row {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
+}
+
+.picture-block {
+  background-image: url("../images/DSC_1204.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.styled-button {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(30, 30, 30, 0.76);
+  border-radius: 50px;
+  height: 50px;
+  width: 175px;
+  background-color: #1c1c1c;
+  box-shadow: 0 0 3px 1px rgba(30, 30, 30, 0.76);
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  color: rgb(254, 254, 254);
+  padding: 10px 20px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: 5vh;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 2px;
+  transition-duration: 0.3s;
+}
+
+.styled-button:hover {
+  text-decoration-color: rgb(254, 254, 254);
+  text-underline-offset: 4px;
+  background-color: #282828;
+  border-color: rgba(40, 40, 40, 0.76);
+  box-shadow: 0 0 3px 1px rgba(33, 33, 33, 0.76);
 }

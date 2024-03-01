@@ -1,29 +1,88 @@
-.skillBlock {
-  display: flex;
-  flex-direction: column;
-  margin: 10vh 20vh;
-}
-
-.skills-row {
+.skills-section {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
-  margin-top: 2vh;
+  align-items: center;
 }
 
 .skills-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  width: 100%;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.skills-row {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 2vh;
+}
+
+.skills-box-row {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-color: #1c1c1c;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 5px 3px 1px #1c1c1c;
+  width: 100%;
+  background-color: #212121;
+}
+
+.skill-text-large {
+  font-family: "League Spartan", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 0;
+  color: #fefefe;
+}
+
+.skills-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1vh 0 1vh;
+  border-color: #1c1c1c;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 0 1px 1px #1c1c1c;
+  background-color: #343434;
+  width: 100%;
+}
+
+.small-skills-text {
+  font-family: "League Spartan", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 0;
+  color: #fefefe;
+  /*text-shadow: #606060 2px 1px 0px;*/
 }
 
 .skill {
-  padding: 10px 10px 5px 10px;
-  margin: 2vh;
-  border-radius: 3px;
-  background-image: linear-gradient(to bottom right, #414040, #262626);
-  box-shadow: 0 0 2px 1px #343434;
+  /*padding: 10px 10px 5px 10px;*/
+  margin: 1vh;
+  /*border-radius: 5px;*/
+  /*background-image: linear-gradient(#565656, #494949);*/
+  /*box-shadow: 0 0 2px 1px #363636;*/
   transition: all 0.2s ease-in-out;
   position: relative;
 }
@@ -40,7 +99,7 @@
 }
 
 .skill-image {
-  filter: drop-shadow(0 0 0.5rem #262626);
+  filter: drop-shadow(0 0 0.3rem rgba(38, 38, 38, 0.72));
 }
 
 .hidden-text-wrap {
