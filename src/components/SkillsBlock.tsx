@@ -70,14 +70,12 @@ function SkillBlock() {
             </div>
             <div className={"skills-box-row"}>{skills(languageLogos)}</div>
           </div>
-          {/*<hr className={"styled-hr"} />*/}
           <div className={"skill-column"}>
             <div className={"skills-text-container"}>
               <div className={"small-skills-text"}>frameworks</div>
             </div>
             <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
           </div>
-          {/*<hr className={"styled-hr"} />*/}
           <div className={"skill-column"}>
             <div className={"skills-text-container"}>
               <div className={"small-skills-text"}>tools</div>

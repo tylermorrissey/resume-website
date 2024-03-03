@@ -3,9 +3,6 @@ import "./App.css";
 import ExpBlock from "./components/ExpBlock";
 import { Box, Button } from "@mui/material";
 import { beamExperience, ccsExperience, rootExperience } from "./content";
-import SkillBlock from "./components/SkillsBlock";
-import ContactBlock from "./components/ContactBlock";
-import PictureBlock from "./components/PictureBlock";
 import NavigationBlock from "./components/NavigationBlock";
 import beamLogo from "./assets/images/beamLogo.png";
 import rootLogo from "./assets/images/rootLogo.png";
@@ -30,8 +27,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className={"threshold"}></div>
-
+        <div className={"threshold"} />
         <div className={"body-block"}>
           <AboutMe />
           <SkillsBlock />
