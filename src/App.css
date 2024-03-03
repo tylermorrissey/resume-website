@@ -117,9 +117,20 @@
 
 .body-block {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: center;
   background-color: #1c1c1c;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1c1c1c;
+  flex-wrap: wrap;
+  padding: 10vh 0;
 }
 
 .landing {

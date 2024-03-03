@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
         <div className={"threshold"} />
-        <div className={"body-block"}>
+        <div className={"info-block"}>
           <AboutMe />
           <SkillsBlock />
         </div>

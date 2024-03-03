@@ -1,6 +1,9 @@
 .skills-section {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
+  min-width: 40vw;
+  /*width: 550px;*/
+  /*padding: 5vh 0;*/
 }
 
 .skills-column {
@@ -8,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10vh 5vw;
+  /*padding: 10vh 1vw;*/
   width: 100%;
 }
 
@@ -18,7 +21,7 @@
   border-radius: 3px;
   min-width: 100%;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .skill-column {
@@ -26,8 +29,14 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  min-width: 300px;
-  margin: 3vh 1vw 0;
+  min-width: 25vw;
+  /*margin: 2vh 1vw 0;*/
+  /*background-color: #343434;*/
+  /*border-color: #ffffff;*/
+  /*border-width: 3px;*/
+  /*border-style: solid;*/
+  /*border-radius: 10px;*/
+  padding: 1vh 1vw;
 }
 
 .skills-box-row {
@@ -35,13 +44,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-color: #1f1f1f;
-  border-width: 0 1px 1px;
-  border-style: solid;
-  border-radius: 0 0 25px 25px;
+  /*border-color: #1f1f1f;*/
+  /*border-width: 0 1px 1px;*/
+  /*border-style: solid;*/
+  /*border-radius: 0 0 25px 25px;*/
+  margin-top: 1vh;
   /*box-shadow: 4px 5px 0px 0px #2a2a2a;*/
   width: 100%;
-  background-color: #3f3f3f;
+  /*background-color: #3f3f3f;*/
 }
 
 .skill-text-large {
@@ -57,13 +67,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1vh 0 1vh;
-  border-color: #1c1c1c;
-  border-width: 1px;
+  padding: 1vh 0 0;
+  border-color: #ffffff;
+  border-width: 0 0 1px;
   border-style: solid;
-  border-radius: 25px 25px 0 0;
-  /*box-shadow: 4px 5px 0px 0px #2a2a2a;*/
-  background-color: #343434;
+  border-radius: 0px;
+  /*box-shadow: 0px 1px px 5px #ffffff;*/
+  /*background-color: #343434;*/
   width: 100%;
 }
 

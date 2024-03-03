@@ -58,6 +58,7 @@
 .picture-block {
   background-image: url("../images/DSC_1204.jpg");
   display: block;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

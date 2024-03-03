@@ -45,8 +45,8 @@ function SkillBlock() {
       <div className="skill">
         <img
           className="skill-image"
-          width={100}
-          height={100}
+          width={85}
+          height={85}
           src={logo}
           alt={"skill-image"}
         />
@@ -65,23 +65,28 @@ function SkillBlock() {
         </div>
         <div className={"skills-block"}>
           <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>languages</div>
-            </div>
             <div className={"skills-box-row"}>{skills(languageLogos)}</div>
-          </div>
-          <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>frameworks</div>
-            </div>
             <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
-          </div>
-          <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>tools</div>
-            </div>
             <div className={"skills-box-row"}>{skills(toolLogos)}</div>
           </div>
+          {/*<div className={"skill-column"}>*/}
+          {/*  <div className={"skills-text-container"}>*/}
+          {/*    <div className={"small-skills-text"}>Languages</div>*/}
+          {/*  </div>*/}
+          {/*  <div className={"skills-box-row"}>{skills(languageLogos)}</div>*/}
+          {/*</div>*/}
+          {/*<div className={"skill-column"}>*/}
+          {/*  <div className={"skills-text-container"}>*/}
+          {/*    <div className={"small-skills-text"}>Frameworks</div>*/}
+          {/*  </div>*/}
+          {/*  <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>*/}
+          {/*</div>*/}
+          {/*<div className={"skill-column"}>*/}
+          {/*  <div className={"skills-text-container"}>*/}
+          {/*    <div className={"small-skills-text"}>Tools</div>*/}
+          {/*  </div>*/}
+          {/*  <div className={"skills-box-row"}>{skills(toolLogos)}</div>*/}
+          {/*</div>*/}
         </div>
       </div>
     </body>
