@@ -58,29 +58,29 @@ function SkillBlock() {
   }
 
   return (
-    <body className={"skills-section section"}>
+    <body className={"skills-section"}>
       <div className={"skills-column"}>
         <div className={"skills-row"}>
           <div className={"skill-text-large"}>What do I like to work with?</div>
         </div>
         <div className={"skills-block"}>
-          <div className={"skills-row"}>
+          <div className={"skill-column"}>
             <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Languages</div>
+              <div className={"small-skills-text"}>languages</div>
             </div>
             <div className={"skills-box-row"}>{skills(languageLogos)}</div>
           </div>
           {/*<hr className={"styled-hr"} />*/}
-          <div className={"skills-row"}>
+          <div className={"skill-column"}>
             <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Frameworks</div>
+              <div className={"small-skills-text"}>frameworks</div>
             </div>
             <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
           </div>
           {/*<hr className={"styled-hr"} />*/}
-          <div className={"skills-row"}>
+          <div className={"skill-column"}>
             <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Tools</div>
+              <div className={"small-skills-text"}>tools</div>
             </div>
             <div className={"skills-box-row"}>{skills(toolLogos)}</div>
           </div>

@@ -12,12 +12,14 @@ import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
 import SkillsBlock from "./components/SkillsBlock";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <Box className={"App"}>
       <div className={"body"}>
-        <div className={"landing section picture-block"}>
+        <div className={"picture-block"}></div>
+        <div className={"landing"}>
           <div className={"landing-content"}>
             <div className={"header"}>
               <NavigationBlock />
@@ -28,8 +30,10 @@ function App() {
             </div>
           </div>
         </div>
+        <div className={"threshold"}></div>
+
         <div className={"body-block"}>
-          {/*<AboutMe />*/}
+          <AboutMe />
           <SkillsBlock />
         </div>
         <div className={"body-block"}>
