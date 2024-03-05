@@ -28,9 +28,11 @@ function App() {
           </div>
         </div>
         <div className={"threshold"} />
-        <div className={"info-block"}>
-          <AboutMe />
-          <SkillsBlock />
+        <div className={"body-row"}>
+          <div className={"info-block"}>
+            {/*<AboutMe />*/}
+            <SkillsBlock />
+          </div>
         </div>
         <div className={"body-block"}>
           <ExpBlock

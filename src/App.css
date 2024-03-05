@@ -79,6 +79,8 @@
 .body-row {
   flex-direction: row;
   display: flex;
+  /*padding-bottom: 5vh;*/
+  background-color: #1c1c1c;
 }
 
 /*.section {*/
@@ -125,12 +127,10 @@
 
 .info-block {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #1c1c1c;
-  flex-wrap: wrap;
-  padding: 10vh 0;
+  padding: 100px 0;
 }
 
 .landing {
@@ -148,7 +148,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  /*background-color: rgba(45, 45, 45, 0.38);*/
+  background-color: rgba(45, 45, 45, 0.16);
   align-items: center;
 }
 
@@ -205,7 +205,7 @@
   flex-shrink: 0;
   background-color: #1c1c1c;
   box-shadow: 0 0 5px 1px #1c1c1c;
-  height: 50px;
+  height: 0;
   width: 100%;
 }
 

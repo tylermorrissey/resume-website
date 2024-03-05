@@ -15,6 +15,7 @@ import groovy from "../assets/images/skills/groovy.svg";
 import javascript from "../assets/images/skills/javascript.svg";
 import gitIcon from "../assets/images/skills/git-icon.svg";
 import "../assets/css/skillsBlock.css";
+import "../assets/css/AboutMe.css";
 
 function SkillBlock() {
   type logoPair = { name: string; logo: string };
@@ -45,13 +46,13 @@ function SkillBlock() {
       <div className="skill">
         <img
           className="skill-image"
-          width={85}
-          height={85}
+          width={25}
+          height={25}
           src={logo}
           alt={"skill-image"}
         />
-        <div className="hidden-text-wrap">
-          <div className="hidden-text">{name}</div>
+        <div className="skill-text">
+          <div className="">{name}</div>
         </div>
       </div>
     ));
@@ -60,33 +61,43 @@ function SkillBlock() {
   return (
     <body className={"skills-section"}>
       <div className={"skills-column"}>
-        <div className={"skills-row"}>
-          <div className={"skill-text-large"}>What do I like to work with?</div>
+        <div className={"skill-row"}>
+          <div className={"about-me-column"}>
+            <div className={"about-me-text-title"}>
+              <div className={"about-me-text-large"}>
+                What I've been up to...
+              </div>
+            </div>
+            <div className={"about-me-text-content"}>
+              <div className={"about-me-text-small"}>
+                What have I been up to? What have I been up to?What have I been
+                up to?What have I been up to?What have I been up to?What have I
+                been up to?What have I been up to?What have I been up to?What
+                have I been up to?What have I been up to?What have I been up
+                to?What have I been up to?
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={"skills-block"}>
+        <div className={"skill-row skills-margin"}>
           <div className={"skill-column"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Languages</div>
+            </div>
             <div className={"skills-box-row"}>{skills(languageLogos)}</div>
+          </div>
+          <div className={"skill-column"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Frameworks</div>
+            </div>
             <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
+          </div>
+          <div className={"skill-column"}>
+            <div className={"skills-text-container"}>
+              <div className={"small-skills-text"}>Tools</div>
+            </div>
             <div className={"skills-box-row"}>{skills(toolLogos)}</div>
           </div>
-          {/*<div className={"skill-column"}>*/}
-          {/*  <div className={"skills-text-container"}>*/}
-          {/*    <div className={"small-skills-text"}>Languages</div>*/}
-          {/*  </div>*/}
-          {/*  <div className={"skills-box-row"}>{skills(languageLogos)}</div>*/}
-          {/*</div>*/}
-          {/*<div className={"skill-column"}>*/}
-          {/*  <div className={"skills-text-container"}>*/}
-          {/*    <div className={"small-skills-text"}>Frameworks</div>*/}
-          {/*  </div>*/}
-          {/*  <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>*/}
-          {/*</div>*/}
-          {/*<div className={"skill-column"}>*/}
-          {/*  <div className={"skills-text-container"}>*/}
-          {/*    <div className={"small-skills-text"}>Tools</div>*/}
-          {/*  </div>*/}
-          {/*  <div className={"skills-box-row"}>{skills(toolLogos)}</div>*/}
-          {/*</div>*/}
         </div>
       </div>
     </body>
