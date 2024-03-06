@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import ExpBlock from "./components/ExpBlock";
 import { Box } from "@mui/material";
@@ -9,6 +9,7 @@ import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
 import SkillsBlock from "./components/SkillsBlock";
+import FooterBlock from "./components/FooterBlock";
 import ContactBlock from "./components/ContactBlock";
 
 function App() {
@@ -56,10 +57,10 @@ function App() {
           />
         </div>
         <div className={"body-block"}>
-          <div className={"row about-me-text-large"}>Lets Chat</div>
+          <ContactBlock />
         </div>
         <div className={"footer"}>
-          <ContactBlock />
+          <FooterBlock />
         </div>
       </div>
     </Box>
