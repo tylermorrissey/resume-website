@@ -17,6 +17,7 @@
 .skill-column {
   display: flex;
   flex-direction: column;
+  margin-top: 1vh;
   width: 400px;
 }
 
@@ -35,8 +36,8 @@
   flex-wrap: wrap;
   padding: 1vh 0 2vh;
   max-width: 90vw;
-  min-width: 90vw;
-  justify-content: space-evenly;
+  min-width: 70vh;
+  justify-content: center;
 }
 
 .skills-margin {
