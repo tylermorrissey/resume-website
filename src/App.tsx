@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import ExpBlock from "./components/ExpBlock";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { beamExperience, ccsExperience, rootExperience } from "./content";
 import NavigationBlock from "./components/NavigationBlock";
 import beamLogo from "./assets/images/beamLogo.png";
@@ -9,7 +9,6 @@ import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
 import SkillsBlock from "./components/SkillsBlock";
-import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -35,6 +34,7 @@ function App() {
           </div>
         </div>
         <div className={"body-block"}>
+          <div className={"row about-me-text-large"}>Where I've been...</div>
           <ExpBlock
             heading={"Beam Benefits"}
             content={beamExperience}
