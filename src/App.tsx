@@ -9,6 +9,7 @@ import rootLogo from "./assets/images/rootLogo.png";
 import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
 import SkillsBlock from "./components/SkillsBlock";
+import ContactBlock from "./components/ContactBlock";
 
 function App() {
   return (
@@ -29,11 +30,11 @@ function App() {
         <div className={"threshold"} />
         <div className={"body-row"}>
           <div className={"info-block"}>
-            {/*<AboutMe />*/}
             <SkillsBlock />
           </div>
         </div>
         <div className={"body-block"}>
+          {/*TODO extract this into the experience component*/}
           <div className={"row about-me-text-large"}>Where I've been...</div>
           <ExpBlock
             heading={"Beam Benefits"}
@@ -53,6 +54,12 @@ function App() {
             image={ccsLogo}
             imgClassName={"ccs-exp-image"}
           />
+        </div>
+        <div className={"body-block"}>
+          <div className={"row about-me-text-large"}>Lets Chat</div>
+        </div>
+        <div className={"footer"}>
+          <ContactBlock />
         </div>
       </div>
     </Box>

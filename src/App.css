@@ -35,6 +35,14 @@
   flex-direction: column;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #313131;
+  padding: 5vh 0;
+  justify-content: center;
+}
 /*----------------------------------------------navbar------------------------------------------------*/
 
 .header {
@@ -96,21 +104,21 @@
 
 .beam-exp-image {
   background-color: #079de8;
-  border-radius: 25px 0 0 25px;
+  border-radius: 10px 0 0 10px;
 
   /*padding: 150px 150px;*/
 }
 
 .ccs-exp-image {
   background-color: #fefefe;
-  border-radius: 25px 0 0 25px;
+  border-radius: 10px 0 0 10px;
 
   /*padding: 150px 150px;*/
 }
 
 .root-exp-image {
   background-color: #ff5715;
-  border-radius: 25px 0 0 25px;
+  border-radius: 10px 0 0 10px;
   /*padding: 150px 150px;*/
 }
 
@@ -130,7 +138,7 @@
 .experience-row {
   color: #fefefe;
   flex-direction: row;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #313131;
   box-shadow: 0 0 2px 1px #363636;
   display: flex;
@@ -191,10 +199,8 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
-  border-radius: 5px;
-  text-wrap: none;
-  flex: 90%;
-  justify-content: flex-start;
+  color: #a2a1a1;
+  align-items: center;
   /*box-shadow: 0 0 5px 2px rgba(28, 15, 31, 0.91);*/
 }
 
@@ -210,10 +216,11 @@
 }
 
 .name {
-  font-size: 30px;
+  font-size: 22px;
   text-align: left;
   line-height: normal;
   margin: 0 0 5px 5px;
+  letter-spacing: 1px;
 }
 
 .title {
@@ -221,6 +228,7 @@
   text-align: left;
   line-height: normal;
   margin: 0 0 5px 5px;
+  letter-spacing: 1px;
 }
 
 .threshold {
@@ -257,9 +265,9 @@ h3 {
 /*----------------------------------------------icons------------------------------------------------*/
 
 .gmail {
-  background-color: #343434;
+  /*background-color: #343434;*/
   padding: 2px 4px 2px 4px !important;
-  box-shadow: 0 0 1px 1px #343434;
+  /*box-shadow: 0 0 1px 1px #343434;*/
   height: max-content;
   border-radius: 10px;
   line-height: 0;
@@ -268,8 +276,8 @@ h3 {
 }
 
 .github {
-  background-color: #343434;
-  box-shadow: 0 0 1px 1px #343434;
+  /*background-color: #343434;*/
+  /*box-shadow: 0 0 1px 1px #343434;*/
   padding: 2px 4px 2px 4px !important;
   height: max-content;
   border-radius: 10px;
@@ -279,8 +287,8 @@ h3 {
 }
 
 .linkedin {
-  background-color: #343434;
-  box-shadow: 0 0 1px 1px #343434;
+  /*background-color: #343434;*/
+  /*box-shadow: 0 0 1px 1px #343434;*/
   padding: 2px 4px 2px 4px !important;
   height: max-content;
   border-radius: 10px;
