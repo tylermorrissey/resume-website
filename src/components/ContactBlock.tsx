@@ -2,35 +2,39 @@ import React, { useState } from "react";
 import SubmitContactForm from "../SubmitContactForm";
 import FormInput from "./form/FormInput";
 import "../assets/css/ContactBlock.css";
-import { ReactComponent as Loader } from "../assets/images/loading.svg";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 function ContactBlock() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  function contactFormRequest() {
-    DisableButton(true);
-    SubmitContactForm(name, message, email);
-  }
-
-  function DisableButton(disabled: boolean) {
-    const button = document.querySelector(".submit-button");
-  }
 
   const Button = () => {
+    function contactFormRequest() {
+      setState((state) => !state);
+      SubmitContactForm(name, message, email);
+    }
+
+    const [state, setState] = useState(false);
     return (
-      <>
-        <button
-          type={"button"}
-          onClick={() => contactFormRequest()}
-          className={"submit-button"}
-          disabled={loading}
+      <SwitchTransition>
+        <CSSTransition
+          key={state ? "Submitted" : "Submit"}
+          addEndListener={(node, done) =>
+            node.addEventListener("transitionend", done, false)
+          }
+          classNames="submit-button"
         >
-          {loading ? <Loader className={"spinner"} /> : "Submit"}
-        </button>
-      </>
+          <button
+            className={"submit-button"}
+            onClick={() => contactFormRequest()}
+            disabled={state}
+            type={"button"}
+          >
+            {state ? "Submitted" : "Submit"}
+          </button>
+        </CSSTransition>
+      </SwitchTransition>
     );
   };
 

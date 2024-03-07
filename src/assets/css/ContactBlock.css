@@ -63,37 +63,49 @@
   height: 50px;
   width: 175px;
   background-color: #343434;
-  box-shadow: 0 0 3px 1px rgba(30, 30, 30, 0.76);
+  /*box-shadow: 0 0 3px 1px rgba(30, 30, 30, 0.76);*/
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
   color: #a2a1a1;
   padding: 10px 20px;
   letter-spacing: 3px;
   font-weight: 500;
-  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-decoration: underline 0.12em rgba(0, 0, 0, 0);
   text-underline-offset: 2px;
   transition-duration: 0.3s;
 }
 
 .submit-button:hover {
-  text-decoration-color: rgb(254, 254, 254);
+  text-decoration-color: rgb(217, 216, 216);
   text-underline-offset: 4px;
   background-color: #282828;
   border-color: rgba(40, 40, 40, 0.76);
-  box-shadow: 0 0 3px 1px rgba(33, 33, 33, 0.76);
+  /*box-shadow: 0 0 3px 1px rgba(33, 33, 33, 0.76);*/
 }
 
-.spinner {
-  animation-name: spin;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.submit-btn:disabled {
+.submit-button:disabled {
   background: #343434;
   color: #a2a1a1;
   cursor: not-allowed;
+  text-decoration: none;
+  /*text-underline-offset: unset;*/
+}
+
+.submit-button-enter {
+  opacity: 0;
+}
+.submit-button-exit {
+  opacity: 1;
+}
+.submit-button-enter-active {
+  opacity: 1;
+}
+.submit-button-exit-active {
+  opacity: 0;
+}
+.submit-button-enter-active,
+.submit-button-exit-active {
+  transition: opacity 200ms;
 }
 
 @keyframes spin {
