@@ -11,7 +11,7 @@ function FormInput({
 }) {
   return (
     <>
-      <div className="row">
+      <div className="form-column">
         <input
           type={name}
           name={name}
