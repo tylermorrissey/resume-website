@@ -45,12 +45,12 @@
   font-family: "League Spartan", sans-serif;
   font-size: 38px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   padding: 3px 0 0 3px;
   transition-duration: 0.5s;
   color: #fefefe;
 }
 
-.navbar > a:hover {
+.navbar > .link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
