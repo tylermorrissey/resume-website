@@ -40,40 +40,6 @@
   padding: 5vh 0;
   justify-content: center;
 }
-/*----------------------------------------------navbar------------------------------------------------*/
-
-.header {
-  display: flex;
-  flex-direction: row;
-  background-color: #1c1c1c;
-  box-shadow: 0 2px 5px 0 #1c1c1c;
-  width: 100%;
-}
-
-.navbar {
-  flex: 100%;
-  display: flex;
-  width: 100vh;
-  height: 8vh;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  margin-right: 5vh;
-}
-
-.navbar > a {
-  padding: 2vh;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 4px;
-  transition-duration: 0.5s;
-  color: #fefefe;
-}
-
-.navbar > a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
 /*----------------------------------------------blocks------------------------------------------------*/
 .body-row {

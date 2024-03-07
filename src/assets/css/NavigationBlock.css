@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 5px 0 #1c1c1c;
+  width: 100%;
+}
+
+.navbar {
+  flex: 100%;
+  display: flex;
+  width: 100vh;
+  height: 8vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: right;
+  flex: 80%;
+  margin-right: 3vh;
+}
+
+.left-nav {
+  display: flex;
+  flex: 20%;
+  justify-content: left;
+  margin-left: 3vh;
+  align-items: center;
+}
+
+.link {
+  padding: 1vh;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition-duration: 0.5s;
+  color: #fefefe;
+}
+
+.navbar > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
