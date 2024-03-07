@@ -1,12 +1,9 @@
 /*----------------------------------------------Main------------------------------------------------*/
 .App {
-  /*background-color: #1c1c1c;*/
-  /*min-height: 100vh;*/
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0;
   font-weight: 400;
-  /*color: #fefefe;*/
   display: flex;
   flex-direction: column;
 }
@@ -51,8 +48,6 @@
   background-color: #1c1c1c;
   box-shadow: 0 2px 5px 0 #1c1c1c;
   width: 100%;
-  /*-webkit-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.75);*/
-  /*-moz-box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.75);*/
 }
 
 .navbar {
@@ -74,8 +69,6 @@
   letter-spacing: 4px;
   transition-duration: 0.5s;
   color: #fefefe;
-  /*box-shadow: #000000;*/
-  /*opacity: 0.7;*/
 }
 
 .navbar > a:hover {
@@ -89,37 +82,19 @@
   background-color: #1c1c1c;
 }
 
-/*.section {*/
-/*  height: 100vh;*/
-/*  scroll-snap-align: center;*/
-/*}*/
-
-.big-circle {
-  /*background-color: #6e6e6e;*/
-  /*height: 2000px;*/
-  /*width: 100%;*/
-  /*border-radius: 0 1000px 1000px 0;*/
-  /*position: absolute;*/
-}
-
 .beam-exp-image {
   background-color: #079de8;
   border-radius: 10px 0 0 10px;
-
-  /*padding: 150px 150px;*/
 }
 
 .ccs-exp-image {
   background-color: #fefefe;
   border-radius: 10px 0 0 10px;
-
-  /*padding: 150px 150px;*/
 }
 
 .root-exp-image {
   background-color: #ff5715;
   border-radius: 10px 0 0 10px;
-  /*padding: 150px 150px;*/
 }
 
 .block-content {
@@ -131,8 +106,6 @@
   word-spacing: 0;
   color: #fefefe;
   text-align: center;
-  /*text-wrap: wrap;*/
-  /*box-shadow: 0 0 5px 2px rgba(28, 15, 31, 0.91);*/
 }
 
 .experience-row {
@@ -142,7 +115,6 @@
   background-color: #313131;
   box-shadow: 0 0 2px 1px #363636;
   display: flex;
-  /*margin-bottom: 3vh;*/
   margin: 2vh 1vw 0;
 }
 
@@ -168,7 +140,6 @@
 .landing {
   display: flex;
   flex-direction: row;
-  /*background-image: url("assets/images/DSC_1204.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,7 +172,6 @@
   padding: 5px;
   color: #a2a1a1;
   align-items: center;
-  /*box-shadow: 0 0 5px 2px rgba(28, 15, 31, 0.91);*/
 }
 
 .contact-column {
@@ -244,7 +214,6 @@
 /*----------------------------------------------elements------------------------------------------------*/
 
 li {
-  /*border: 1px solid rgba(63, 63, 63, 0.34);*/
   border-radius: 5px;
   list-style-type: none;
   list-style-position: inside;
@@ -265,9 +234,7 @@ h3 {
 /*----------------------------------------------icons------------------------------------------------*/
 
 .gmail {
-  /*background-color: #343434;*/
   padding: 2px 4px 2px 4px !important;
-  /*box-shadow: 0 0 1px 1px #343434;*/
   height: max-content;
   border-radius: 10px;
   line-height: 0;
@@ -276,8 +243,6 @@ h3 {
 }
 
 .github {
-  /*background-color: #343434;*/
-  /*box-shadow: 0 0 1px 1px #343434;*/
   padding: 2px 4px 2px 4px !important;
   height: max-content;
   border-radius: 10px;
@@ -287,8 +252,6 @@ h3 {
 }
 
 .linkedin {
-  /*background-color: #343434;*/
-  /*box-shadow: 0 0 1px 1px #343434;*/
   padding: 2px 4px 2px 4px !important;
   height: max-content;
   border-radius: 10px;
