@@ -3,16 +3,38 @@ import SubmitContactForm from "../SubmitContactForm";
 import FormInput from "./form/FormInput";
 import "../assets/css/ContactBlock.css";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
+import * as yup from "yup";
 
 function ContactBlock() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState("");
+
+  const userSchema = yup.object().shape({
+    name: yup.string().required(),
+    email: yup.string().email().required(),
+    message: yup.string().required(),
+  });
 
   const Button = () => {
-    function contactFormRequest() {
-      setState((state) => !state);
-      SubmitContactForm(name, message, email);
+    async function validateForm() {
+      const dataObject = {
+        name: name,
+        email: email,
+        message: message,
+      };
+      // validating this dataObject concerning Yup userSchema
+
+      const isValid = await userSchema.isValid(dataObject);
+
+      if (isValid) {
+        setState((state) => !state);
+        SubmitContactForm(name, message, email);
+        setErrors("");
+      } else {
+        setErrors("Please fill out every section");
+      }
     }
 
     const [state, setState] = useState(false);
@@ -27,7 +49,7 @@ function ContactBlock() {
         >
           <button
             className={"submit-button"}
-            onClick={() => contactFormRequest()}
+            onClick={() => validateForm()}
             disabled={state}
             type={"button"}
           >
@@ -48,6 +70,7 @@ function ContactBlock() {
       >
         <div className={"body-row"}>
           <div className={"form-column"}>
+            <div className={"error-message"}>{errors}</div>
             <div className={"form-row"}>
               <FormInput
                 name={"email"}

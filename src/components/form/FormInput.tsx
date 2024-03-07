@@ -22,7 +22,7 @@ function FormInput({
             const value = element.value;
             setEmail(value);
           }}
-          required
+          required={true}
         />
       </div>
     </>

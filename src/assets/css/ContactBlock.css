@@ -1,5 +1,6 @@
 .email-input {
   background-color: #343434;
+  color: #a2a1a1;
   height: 50px;
   max-width: 95vw;
   border-radius: 5px;
@@ -13,6 +14,7 @@
 
 .name-input {
   background-color: #343434;
+  color: #a2a1a1;
   height: 50px;
   max-width: 95vw;
   border-radius: 5px;
@@ -89,6 +91,11 @@
   cursor: not-allowed;
   text-decoration: none;
   /*text-underline-offset: unset;*/
+}
+
+.error-message {
+  color: #a16a6a;
+  margin-left: 5px;
 }
 
 .submit-button-enter {
