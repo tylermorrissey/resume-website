@@ -40,6 +40,17 @@
   color: #fefefe;
 }
 
+.logo-link {
+  /*padding: 1vh;*/
+  font-family: "League Spartan", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 3px 0 0 3px;
+  transition-duration: 0.5s;
+  color: #fefefe;
+}
+
 .navbar > a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }

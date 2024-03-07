@@ -12,7 +12,7 @@ function NavigationBlock() {
           src={db}
           alt="gmail.logo"
         />
-        <a className={"link"}>tm</a>
+        <a className={"logo-link"}>tm</a>
       </div>
       <div className={"right-nav"}>
         <a className={"link"}>skills</a>
