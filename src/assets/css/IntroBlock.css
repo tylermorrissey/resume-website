@@ -46,6 +46,7 @@
 
 .picture-block {
   background-image: url("../images/DSC_1204-min.jpg");
+  background-color: #313131;
   display: block;
   background-attachment: fixed;
   background-position: left;

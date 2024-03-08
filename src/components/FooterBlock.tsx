@@ -22,54 +22,56 @@ function FooterBlock() {
   }
 
   return (
-    <div className="contact-content">
-      <div>made by</div>
-      <div className="name">Tyler Morrissey</div>
-      <div className="title">Software Engineer</div>
-      <div className="logos">
-        <div className="gmail">
-          <ClickAwayListener onClickAway={handleTooltipClose}>
-            <Tooltip
-              title="Copied to clipboard"
-              PopperProps={{
-                disablePortal: true,
-              }}
-              onClose={handleTooltipClose}
-              open={open}
-              disableFocusListener
-              disableHoverListener
-              disableTouchListener
-            >
-              <a className={"gmail-logo"} onClick={() => copyToClipboard()}>
-                <img
-                  className="logo"
-                  style={{ width: 25, height: 25 }}
-                  src={gmailLogo}
-                  alt="gmail.logo"
-                />
-              </a>
-            </Tooltip>
-          </ClickAwayListener>
-        </div>
-        <div className="github">
-          <a href="https://github.com/tylermorrissey">
-            <img
-              className="logo"
-              style={{ width: 25, height: 25 }}
-              src={githubLogo}
-              alt="gmail.logo"
-            />
-          </a>
-        </div>
-        <div className="linkedin">
-          <a href="https://www.linkedin.com/in/tylermorrissey/">
-            <img
-              className="linkedin-logo"
-              style={{ width: 25, height: 25 }}
-              src={linkedinLogo}
-              alt="gmail.logo"
-            />
-          </a>
+    <div className={"footer"}>
+      <div className="contact-content">
+        <div>made by</div>
+        <div className="name">Tyler Morrissey</div>
+        <div className="title">Software Engineer</div>
+        <div className="logos">
+          <div className="gmail">
+            <ClickAwayListener onClickAway={handleTooltipClose}>
+              <Tooltip
+                title="Copied to clipboard"
+                PopperProps={{
+                  disablePortal: true,
+                }}
+                onClose={handleTooltipClose}
+                open={open}
+                disableFocusListener
+                disableHoverListener
+                disableTouchListener
+              >
+                <a className={"gmail-logo"} onClick={() => copyToClipboard()}>
+                  <img
+                    className="logo"
+                    style={{ width: 25, height: 25 }}
+                    src={gmailLogo}
+                    alt="gmail.logo"
+                  />
+                </a>
+              </Tooltip>
+            </ClickAwayListener>
+          </div>
+          <div className="github">
+            <a href="https://github.com/tylermorrissey">
+              <img
+                className="logo"
+                style={{ width: 25, height: 25 }}
+                src={githubLogo}
+                alt="gmail.logo"
+              />
+            </a>
+          </div>
+          <div className="linkedin">
+            <a href="https://www.linkedin.com/in/tylermorrissey/">
+              <img
+                className="linkedin-logo"
+                style={{ width: 25, height: 25 }}
+                src={linkedinLogo}
+                alt="gmail.logo"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

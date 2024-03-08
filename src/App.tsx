@@ -1,68 +1,23 @@
 import "./App.css";
-import ExpBlock from "./components/ExpBlock";
 import { Box } from "@mui/material";
-import { beamExperience, ccsExperience, rootExperience } from "./content";
-import NavigationBlock from "./components/NavigationBlock";
-import beamLogo from "./assets/images/beamLogo.png";
-import rootLogo from "./assets/images/rootLogo.png";
-import ccsLogo from "./assets/images/ccsLogo.png";
 import IntroBlock from "./components/IntroBlock";
 import SkillsBlock from "./components/SkillsBlock";
 import FooterBlock from "./components/FooterBlock";
 import ContactBlock from "./components/ContactBlock";
+import ExperienceBlock from "./components/ExperienceBlock";
 
 function App() {
   return (
     <Box className={"App"}>
       <div className={"body"}>
+        <div className={"loading-screen"} />
         <div className={"picture-block"} />
-        <div className={"landing"}>
-          <div className={"landing-content"}>
-            <div className={"header"}>
-              <NavigationBlock />
-            </div>
-            <IntroBlock />
-            <div className={"intro-footer"}>
-              <a className={"styled-button"} href={"#about-me"}>
-                About me
-              </a>
-            </div>
-          </div>
-        </div>
+        <IntroBlock />
         <div className={"threshold"} />
-        <div className={"body-row"}>
-          <div className={"info-block"}>
-            <SkillsBlock />
-          </div>
-        </div>
-        <div id={"exp-block"} className={"body-block"}>
-          {/*TODO extract this into the experience component*/}
-          <div className={"row about-me-text-large"}>Where I've been...</div>
-          <ExpBlock
-            heading={"Beam Benefits"}
-            content={beamExperience}
-            image={beamLogo}
-            imgClassName={"beam-exp-image"}
-          />
-          <ExpBlock
-            heading={"Root Insurance"}
-            content={rootExperience}
-            image={rootLogo}
-            imgClassName={"root-exp-image"}
-          />
-          <ExpBlock
-            heading={"Columbus City Schools"}
-            content={ccsExperience}
-            image={ccsLogo}
-            imgClassName={"ccs-exp-image"}
-          />
-        </div>
-        <div id={"contact-block"} className={"body-block"}>
-          <ContactBlock />
-        </div>
-        <div className={"footer"}>
-          <FooterBlock />
-        </div>
+        <SkillsBlock />
+        <ExperienceBlock />
+        <ContactBlock />
+        <FooterBlock />
       </div>
     </Box>
   );
