@@ -23,7 +23,7 @@ function App() {
             </div>
             <IntroBlock />
             <div className={"intro-footer"}>
-              <button className={"styled-button"}>About Me</button>
+              <button className={"styled-button"}>About me</button>
             </div>
           </div>
         </div>

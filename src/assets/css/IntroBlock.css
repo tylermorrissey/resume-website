@@ -68,11 +68,11 @@
   background-color: #1c1c1c;
   box-shadow: 0 0 3px 1px rgba(30, 30, 30, 0.76);
   font-family: "League Spartan", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(254, 254, 254);
   padding: 10px 20px;
-  letter-spacing: 3px;
-  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: 700;
   margin-bottom: 15vh;
   text-decoration: underline 0.12em rgba(0, 0, 0, 0);
   text-underline-offset: 2px;

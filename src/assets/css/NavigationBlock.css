@@ -10,7 +10,7 @@
   flex: 100%;
   display: flex;
   width: 100vh;
-  height: 8vh;
+  height: 7vh;
   flex-direction: row;
   align-items: center;
 }
@@ -31,7 +31,7 @@
 }
 
 .link {
-  padding: 1vh;
+  padding: 3px 1vh 0;
   font-family: "League Spartan", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -51,6 +51,6 @@
   color: #fefefe;
 }
 
-.navbar > .link:hover {
+.link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }

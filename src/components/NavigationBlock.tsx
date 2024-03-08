@@ -6,12 +6,12 @@ function NavigationBlock() {
   return (
     <div className="navbar">
       <div className={"left-nav"}>
-        <img
-          className="logo"
-          style={{ width: 25, height: 25 }}
-          src={db}
-          alt="gmail.logo"
-        />
+        {/*<img*/}
+        {/*  className="logo"*/}
+        {/*  style={{ width: 25, height: 25 }}*/}
+        {/*  src={db}*/}
+        {/*  alt="gmail.logo"*/}
+        {/*/>*/}
         <a className={"logo-link"}>tm</a>
       </div>
       <div className={"right-nav"}>
