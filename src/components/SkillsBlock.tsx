@@ -16,6 +16,7 @@ import javascript from "../assets/images/skills/javascript.svg";
 import gitIcon from "../assets/images/skills/git-icon.svg";
 import "../assets/css/skillsBlock.css";
 import "../assets/css/AboutMe.css";
+import AboutMe from "./AboutMe";
 
 function SkillBlock() {
   type logoPair = { name: string; logo: string };
@@ -59,52 +60,37 @@ function SkillBlock() {
   }
 
   return (
-    <body id={"about-me"} className={"skills-section"}>
-      <div className={"skills-column"}>
-        <div className={"skill-row"}>
-          <div className={"about-me-column"}>
-            <div className={"about-me-text-title"}>
-              <div className={"about-me-text-large"}>
-                What I've been up to...
+    <div className={"body-row"}>
+      <div className={"info-block"}>
+        <div id={"about-me"} className={"skills-section"}>
+          <div className={"skills-column"}>
+            <div className={"skill-row"}>
+              <AboutMe />
+            </div>
+            <div id={"skills-block"} className={"skill-row skills-margin"}>
+              <div className={"skill-column"}>
+                <div className={"skills-text-container"}>
+                  <div className={"small-skills-text"}>Languages</div>
+                </div>
+                <div className={"skills-box-row"}>{skills(languageLogos)}</div>
+              </div>
+              <div className={"skill-column"}>
+                <div className={"skills-text-container"}>
+                  <div className={"small-skills-text"}>Frameworks</div>
+                </div>
+                <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
+              </div>
+              <div className={"skill-column"}>
+                <div className={"skills-text-container"}>
+                  <div className={"small-skills-text"}>Tools</div>
+                </div>
+                <div className={"skills-box-row"}>{skills(toolLogos)}</div>
               </div>
             </div>
-            <div className={"about-me-text-content"}>
-              <div className={"about-me-text-small"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                lacinia, quam viverra accumsan tristique, nunc lectus
-                pellentesque urna, in fringilla est erat ut ex. Quisque a diam
-                neque. Cras quis fringilla tellus. Maecenas eleifend cursus
-                tempor. Sed dignissim porttitor diam, sit amet porta magna
-                sodales ac. Vivamus cursus, nisl sed fermentum tempus, metus
-                tellus eleifend elit, at sagittis arcu eros sit amet ante.
-                Curabitur nec sem ipsum. Mauris eget orci lacinia arcu elementum
-                faucibus ut quis tellus.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id={"skills-block"} className={"skill-row skills-margin"}>
-          <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Languages</div>
-            </div>
-            <div className={"skills-box-row"}>{skills(languageLogos)}</div>
-          </div>
-          <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Frameworks</div>
-            </div>
-            <div className={"skills-box-row"}>{skills(frameworkLogos)}</div>
-          </div>
-          <div className={"skill-column"}>
-            <div className={"skills-text-container"}>
-              <div className={"small-skills-text"}>Tools</div>
-            </div>
-            <div className={"skills-box-row"}>{skills(toolLogos)}</div>
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 

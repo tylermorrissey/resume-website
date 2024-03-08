@@ -1,6 +1,6 @@
 import React from "react";
 
-function ExpBlock({
+function ExpTile({
   heading,
   content,
   image,
@@ -30,4 +30,4 @@ function ExpBlock({
   );
 }
 
-export default ExpBlock;
+export default ExpTile;
