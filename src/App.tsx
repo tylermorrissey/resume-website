@@ -15,7 +15,7 @@ function App() {
   return (
     <Box className={"App"}>
       <div className={"body"}>
-        <div className={"picture-block"}></div>
+        <div className={"picture-block"} />
         <div className={"landing"}>
           <div className={"landing-content"}>
             <div className={"header"}>
