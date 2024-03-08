@@ -1,23 +1,32 @@
 import React from "react";
 import "../assets/css/NavigationBlock.css";
-import db from "../assets/images/db.svg";
 
 function NavigationBlock() {
+  function scrollTo(e: React.MouseEvent) {
+    e.preventDefault();
+    console.log(document.querySelector("#skills-block"));
+    // window.location.replace("/#skills-block");
+    window.scrollTo({
+      top: document.querySelector("#skills-block")?.scrollTop,
+      // behavior: "smooth",
+    });
+  }
+
   return (
     <div className="navbar">
       <div className={"left-nav"}>
-        {/*<img*/}
-        {/*  className="logo"*/}
-        {/*  style={{ width: 25, height: 25 }}*/}
-        {/*  src={db}*/}
-        {/*  alt="gmail.logo"*/}
-        {/*/>*/}
         <a className={"logo-link"}>tm</a>
       </div>
       <div className={"right-nav"}>
-        <a className={"link"}>skills</a>
-        <a className={"link"}>experience</a>
-        <a className={"link"}>contact</a>
+        <a href={"#skills-block"} className={"link"}>
+          skills
+        </a>
+        <a href={"#exp-block"} className={"link"}>
+          experience
+        </a>
+        <a href={"#contact-block"} className={"link"}>
+          contact
+        </a>
       </div>
     </div>
   );

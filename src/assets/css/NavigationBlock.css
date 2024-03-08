@@ -38,6 +38,7 @@
   letter-spacing: 3px;
   transition-duration: 0.5s;
   color: #fefefe;
+  text-decoration: none;
 }
 
 .logo-link {

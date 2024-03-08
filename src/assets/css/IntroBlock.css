@@ -59,6 +59,7 @@
 }
 
 .styled-button {
+  text-align: center;
   border-style: solid;
   border-width: 3px;
   border-color: rgba(30, 30, 30, 0.76);

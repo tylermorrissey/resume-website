@@ -6,6 +6,7 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth !important;
 }
 
 * {
@@ -18,6 +19,8 @@
   flex-direction: column;
   height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  overflow-y: scroll;
 }
 
 .row {

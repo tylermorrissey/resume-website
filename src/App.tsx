@@ -23,7 +23,9 @@ function App() {
             </div>
             <IntroBlock />
             <div className={"intro-footer"}>
-              <button className={"styled-button"}>About me</button>
+              <a className={"styled-button"} href={"#about-me"}>
+                About me
+              </a>
             </div>
           </div>
         </div>
@@ -33,7 +35,7 @@ function App() {
             <SkillsBlock />
           </div>
         </div>
-        <div className={"body-block"}>
+        <div id={"exp-block"} className={"body-block"}>
           {/*TODO extract this into the experience component*/}
           <div className={"row about-me-text-large"}>Where I've been...</div>
           <ExpBlock
@@ -55,7 +57,7 @@ function App() {
             imgClassName={"ccs-exp-image"}
           />
         </div>
-        <div className={"body-block"}>
+        <div id={"contact-block"} className={"body-block"}>
           <ContactBlock />
         </div>
         <div className={"footer"}>

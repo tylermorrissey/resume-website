@@ -59,7 +59,7 @@ function SkillBlock() {
   }
 
   return (
-    <body className={"skills-section"}>
+    <body id={"about-me"} className={"skills-section"}>
       <div className={"skills-column"}>
         <div className={"skill-row"}>
           <div className={"about-me-column"}>
@@ -83,7 +83,7 @@ function SkillBlock() {
             </div>
           </div>
         </div>
-        <div className={"skill-row skills-margin"}>
+        <div id={"skills-block"} className={"skill-row skills-margin"}>
           <div className={"skill-column"}>
             <div className={"skills-text-container"}>
               <div className={"small-skills-text"}>Languages</div>
