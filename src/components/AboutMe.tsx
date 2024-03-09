@@ -10,14 +10,13 @@ function AboutMe() {
         </div>
         <div className={"about-me-text-content"}>
           <div className={"about-me-text-small"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            lacinia, quam viverra accumsan tristique, nunc lectus pellentesque
-            urna, in fringilla est erat ut ex. Quisque a diam neque. Cras quis
-            fringilla tellus. Maecenas eleifend cursus tempor. Sed dignissim
-            porttitor diam, sit amet porta magna sodales ac. Vivamus cursus,
-            nisl sed fermentum tempus, metus tellus eleifend elit, at sagittis
-            arcu eros sit amet ante. Curabitur nec sem ipsum. Mauris eget orci
-            lacinia arcu elementum faucibus ut quis tellus.
+            I started my career in 2017 at Columbus City Schools working as a
+            full stack engineer on a Grails team. Since then I've worked at two
+            growing startups, cutting my teeth in fast paced insurance
+            industries. I'm comfortable collaborating with other talented
+            engineers and I enjoy mentoring those who are new to the field. If
+            you need a well rounded engineer who produces elegant architecture
+            and smooth, functional UI, you can count on me.
           </div>
         </div>
       </div>
